@@ -1,7 +1,13 @@
 const portflioBtn = document.getElementById("draw-button");
 const showTxt = document.getElementById("show");
 
-const portfolioTexts = [{ name: "Vegetarian gyoza" }];
+const portfolioTexts = [
+  { name: "Vegetarian gyoza" },
+  { name: "Katsu Curry" },
+  { name: "Shoyu Ramen" },
+  { name: "Tonkotsu Ramen" },
+  { name: "Sushi California Rolls" },
+];
 
 function drawText() {
   let index = Math.floor(Math.random() * portfolioTexts.length);
@@ -12,7 +18,7 @@ let paragraph = document.createElement("p");
 function showText() {
   console.log("ok");
   paragraph.textContent = "";
-  paragraph.textContent = `Dzisiaj zjesz: ${drawText()}`;
+  paragraph.textContent = `Dzisiaj zjesz ${drawText()}`;
   showTxt.classList.add("showText");
   showTxt.appendChild(paragraph);
 }

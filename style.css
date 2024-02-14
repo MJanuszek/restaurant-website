@@ -81,7 +81,7 @@
 }
 /* ---------------------draw dish section */
 .draw-dish {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,9 +89,9 @@
 }
 
 .draw-btn {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-family: "Fira Sans Condensed", sans-serif;
-  padding: 20px;
+  padding: 25px;
   border: 2px solid white;
   background-color: #de46a4;
   border-radius: 12px;
@@ -113,15 +113,63 @@
 }
 
 .title,
-.draw-title {
+.draw-title,
+.interior-title {
   display: flex;
   justify-content: center;
   font-family: "Protest Revolution", sans-serif;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 400;
   padding: 30px;
 }
+.interior-title {
+  background-color: #de46a4;
+}
 .showText {
-  font-size: 2em;
-  margin-top: 4vh;
+  font-size: 2.2em;
+  margin-top: 8vh;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+/* gallery */
+.gallery-food,
+.gallery-interior {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.gallery-img {
+  /* height: 400px;
+  width: 400px; */
+  height: 50vh;
+  width: 40vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img1 {
+  background-image: url("./assets/jirayu-koontholjinda-G675o-lxbnQ-unsplash.jpg");
+}
+.img2 {
+  background-image: url("./assets/marina-grynykha-FBgCgJhPO2I-unsplash.jpg");
+}
+.img3 {
+  background-image: url("./assets/michele-blackwell-rAyCBQTH7ws-unsplash.jpg");
+}
+.img4 {
+  background-image: url("./assets/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg");
+}
+
+/* ----interior */
+.img-in1 {
+  background-image: url("./assets/interior/baiq-daling-vuZJ1VRHNF4-unsplash.jpg");
+}
+.img-in2 {
+  background-image: url("./assets/interior/jirayu-koontholjinda-QRX-K4BzCSw-unsplash.jpg");
+}
+.img-in3 {
+  background-image: url("./assets/interior/samuel-foster-LxD9fZYR2uw-unsplash.jpg");
+}
+.img-in4 {
+  background-image: url("./assets/interior/thomas-marban-EHK-EH1SRzQ-unsplash.jpg");
 }
