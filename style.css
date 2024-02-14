@@ -1,3 +1,6 @@
+:root {
+  --main-color: #cd054e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,23 +19,28 @@
   color: white;
   background-color: black;
 }
+
 .info {
   display: flex;
-  text-align: center;
-  line-height: 1.8em;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   height: 30vh;
-  background-color: #d10f87;
+  background-color: var(--main-color);
+}
+.info-description {
+  text-align: center;
+  line-height: 1.8em;
 }
 /* --------------------------------------- */
 .text-types {
-  background-color: #de46a4;
-  height: 80vh;
+  /* background-color: #de46a4; */
+  background-image: url("./assets/beautiful-flowers-seen-humidity-glass_23-2149453610.jpg");
+  background-size: contain;
   display: flex;
   justify-content: space-around;
   margin-bottom: 2vh;
+  padding-bottom: 5vh;
 }
 .text-title {
   text-align: center;
@@ -66,7 +74,7 @@
 /* ---------------------------------------------- */
 .contakt {
   height: 40vh;
-  background-color: #de46a4;
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +101,7 @@
   font-family: "Fira Sans Condensed", sans-serif;
   padding: 25px;
   border: 2px solid white;
-  background-color: #de46a4;
+  background-color: var(--main-color);
   border-radius: 12px;
   margin-top: 6vh;
 }
@@ -123,7 +131,7 @@
   padding: 30px;
 }
 .interior-title {
-  background-color: #de46a4;
+  background-color: var(--main-color);
 }
 .showText {
   font-size: 2.2em;
@@ -135,7 +143,7 @@
 .gallery-food,
 .gallery-interior {
   display: flex;
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
 }
 .gallery-img {
@@ -146,6 +154,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.gallery-img:hover {
+  height: 53vh;
+  width: 43vw;
 }
 .img1 {
   background-image: url("./assets/jirayu-koontholjinda-G675o-lxbnQ-unsplash.jpg");
