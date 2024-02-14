@@ -73,7 +73,7 @@
 }
 /* ---------------------------------------------- */
 .contakt {
-  height: 40vh;
+  min-height: 40vh;
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@
 }
 /* ---------------------draw dish section */
 .draw-dish {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +137,8 @@
   font-size: 2.2em;
   margin-top: 8vh;
   font-family: "Protest Revolution", sans-serif;
+  margin-bottom: 10vh;
+  text-shadow: 2px 2px 4px var(--main-color);
 }
 
 /* gallery */
